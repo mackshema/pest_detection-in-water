@@ -1,0 +1,16 @@
+# Dataset folders
+dataset/
+pest/
+temp_frog/
+frog-dataset-master/
+frog.zip
+
+# Build artifacts
+*.pth
+*.onnx
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
