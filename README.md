@@ -143,16 +143,16 @@ Design considerations include:
 Below are example detection outputs from the system.
 
 ### Output Image 1
-![Output 1](WhatsApp Image 2026-03-07 at 11.42.13 PM.jpeg)
+![Output 1](A.jpeg)
 
 ### Output Image 2
-![Output 2](WhatsApp Image 2026-03-07 at 11.43.18 PM.jpeg)
+![Output 2](B.jpeg)
 
 ### Output Image 3
-![Output 3](WhatsApp Image 2026-03-07 at 11.45.20 PM.jpeg)
+![Output 3](C.jpeg)
 
 ### Output Image 4
-![Output 4](WhatsApp Image 2026-03-07 at 11.48.53 PM.jpeg)
+![Output 4](D.jpeg)
 
 ### Output Image 5
 ![Output 5](WhatsApp_Image_2026-03-07_at_11.42.13_PM.jpeg)
