@@ -155,7 +155,7 @@ Below are example detection outputs from the system.
 ![Output 4](WhatsApp Image 2026-03-07 at 11.48.53 PM.jpeg)
 
 ### Output Image 5
-![Output 5](WhatsApp Image 2026-03-07 at 11.49.27 PM.jpeg)
+![Output 5](WhatsApp_Image_2026-03-07_at_11.42.13_PM.jpeg)
 
 ### Output Image 6
 ![Output 6](frog_image.png)
