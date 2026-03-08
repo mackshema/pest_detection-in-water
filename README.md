@@ -1,6 +1,6 @@
 <div align="center">
 
-# Smart Water Tank Pest Detection System
+# AI-Powered Bio Contamination Detection System
 
 <img src="https://img.shields.io/badge/Platform-ESP32--CAM-blue?style=for-the-badge&logo=espressif&logoColor=white"/>
 <img src="https://img.shields.io/badge/AI-Computer%20Vision-blueviolet?style=for-the-badge&logo=opencv&logoColor=white"/>
@@ -8,266 +8,13 @@
 <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Hardware-Embedded-orange?style=for-the-badge&logo=arduino&logoColor=white"/>
 
----
-
-## AI Model Architecture
-
-The detection system is built on a lightweight convolutional neural network optimized for embedded deployment. The model is trained to classify visual contamination patterns commonly found inside water tanks.
-
-The architecture follows a compact CNN pipeline designed for efficient edge inference.
-
-```
-Input Image (160x160 RGB)
-        │
-        ▼
-Convolution Layer
-        │
-        ▼
-Batch Normalization
-        │
-        ▼
-ReLU Activation
-        │
-        ▼
-Max Pooling
-        │
-        ▼
-Feature Extraction Layers
-        │
-        ▼
-Global Average Pooling
-        │
-        ▼
-Fully Connected Layer
-        │
-        ▼
-Softmax Classification
-```
-
-The final output layer produces probability scores for each contamination class.
-
----
-
-## Target Classes
-
-The AI model is trained to detect multiple contamination types that may occur inside water tanks.
-
-| Class | Description |
-|------|-------------|
-| Aphids | Small insect contamination |
-| Armyworm | Worm-like biological presence |
-| Beetle | Hard-shelled insect contamination |
-| Bollworm | Larval stage pest |
-| Grasshopper | Larger insect contamination |
-| Mites | Microscopic pest clusters |
-| Mosquito | Mosquito larvae and adults |
-| Sawfly | Insect contamination |
-| Stem Borer | Worm-like organisms |
-
-Additional environmental objects such as frogs and floating debris are also included during testing for anomaly detection.
-
----
-
-## Dataset Preparation
-
-Training data was collected from open datasets and manually curated to represent contamination scenarios.
-
-Dataset structure:
-
-```
-dataset/
-│
-├── train/
-│   ├── aphids/
-│   ├── armyworm/
-│   ├── beetle/
-│   ├── bollworm/
-│   ├── grasshopper/
-│   ├── mites/
-│   ├── mosquito/
-│   ├── sawfly/
-│   └── stem_borer/
-│
-└── test/
-```
-
-Dataset preprocessing includes:
-
-- Image resizing
-- Normalization
-- Data augmentation
-- Class balancing
-
----
-
-## Computer Vision Processing
-
-Captured frames undergo several preprocessing steps before AI inference.
-
-```
-Raw Camera Frame
-      │
-      ▼
-Image Resize (160x160)
-      │
-      ▼
-Color Space Conversion (BGR → RGB)
-      │
-      ▼
-Pixel Normalization
-      │
-      ▼
-Tensor Conversion
-      │
-      ▼
-Neural Network Input
-```
-
-Normalization parameters:
-
-```
-Mean = [0.485, 0.456, 0.406]
-Std  = [0.229, 0.224, 0.225]
-```
-
-These values ensure consistency with training conditions.
-
----
-
-## Edge AI Inference
-
-The trained model is exported into **ONNX format** to enable efficient inference on edge hardware.
-
-Inference workflow:
-
-```
-Camera Frame
-      │
-      ▼
-Preprocessing
-      │
-      ▼
-ONNX Runtime Inference
-      │
-      ▼
-Softmax Probability Calculation
-      │
-      ▼
-Confidence Threshold Filtering
-      │
-      ▼
-Final Detection Output
-```
-
-The system uses a configurable confidence threshold to minimize false positives.
-
----
-
-## Temporal Detection Filtering
-
-To reduce incorrect predictions caused by noise or lighting variations, the system applies temporal validation.
-
-```
-Frame N Detection
-      │
-      ▼
-Frame N+1 Detection
-      │
-      ▼
-Frame N+2 Detection
-      │
-      ▼
-Majority Decision
-      │
-      ▼
-Confirmed Detection
-```
-
-This ensures that contaminants are detected consistently across multiple frames before triggering an alert.
-
----
-
-## Model Optimization for Embedded Systems
-
-Running AI models on embedded hardware requires optimization.
-
-Techniques used:
-
-- Model quantization
-- Reduced input resolution
-- Lightweight convolution layers
-- ONNX model export
-- Efficient memory allocation
-
-These optimizations allow real-time inference on constrained devices.
-
----
-
-## Detection Confidence Logic
-
-Each prediction produces a probability score.
-
-```
-Prediction = Softmax(Output)
-
-If Confidence > Threshold
-    Detection Confirmed
-Else
-    Frame Ignored
-```
-
-Typical threshold values range from **0.30 to 0.60** depending on sensitivity requirements.
-
----
-
-## AI Processing Workflow
-
-The full AI workflow combines computer vision, machine learning inference, and embedded processing.
-
-```
-Camera Frame
-      │
-      ▼
-Image Preprocessing
-      │
-      ▼
-AI Model Inference
-      │
-      ▼
-Confidence Filtering
-      │
-      ▼
-Temporal Validation
-      │
-      ▼
-Detection Result
-      │
-      ▼
-Display Output
-```
-
----
-
-## Edge Deployment Strategy
-
-The system follows an **Edge AI architecture**, where processing occurs locally rather than in the cloud.
-
-Advantages:
-
-- No internet dependency
-- Reduced latency
-- Increased privacy
-- Lower operational cost
-- Real-time decision making
-
-
-
 <br/>
 
 > **An AI-powered embedded vision system that detects biological contamination inside water tanks — keeping your water safe, automatically.**
 
 <br/>
 
+</div>
 
 ---
 
@@ -292,7 +39,7 @@ Advantages:
 
 ## Overview
 
-The **Smart Water Tank Pest Detection System** is a low-cost, AI-powered embedded device designed to visually inspect water tanks for biological contamination — without manual intervention.
+The **AI-Powered Bio Contamination Detection System** is a low-cost, intelligent embedded device designed to visually inspect water tanks for biological contamination — without manual intervention.
 
 Built around the **ESP32-CAM** module, the system captures real-time images of the tank interior, runs AI inference directly on the edge, and displays detection results on a compact LCD interface.
 
@@ -326,7 +73,7 @@ This project addresses this gap by introducing an **AI-based vision system** cap
 
 ```
 ┌─────────────────────────────────────┐
-│             💧 Water Tank            │
+│             Water Tank            │
 └──────────────────┬──────────────────┘
                    │
                    ▼
@@ -543,7 +290,6 @@ This project is released under the **MIT License** — free to use, modify, and 
 | AI/ML Engineer | Model training, optimization & deployment |
 | Hardware Architect | PCB design & system integration |
 
-</div>
 ---
 
 <div align="center">
