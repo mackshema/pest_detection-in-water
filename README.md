@@ -1,5 +1,13 @@
 <div align="center">
 
+# Smart Water Tank Pest Detection System
+
+<img src="https://img.shields.io/badge/Platform-ESP32--CAM-blue?style=for-the-badge&logo=espressif&logoColor=white"/>
+<img src="https://img.shields.io/badge/AI-Computer%20Vision-blueviolet?style=for-the-badge&logo=opencv&logoColor=white"/>
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Hardware-Embedded-orange?style=for-the-badge&logo=arduino&logoColor=white"/>
+
 ---
 
 ## AI Model Architecture
@@ -252,13 +260,7 @@ Advantages:
 - Lower operational cost
 - Real-time decision making
 
-# Smart Water Tank Pest Detection System
 
-<img src="https://img.shields.io/badge/Platform-ESP32--CAM-blue?style=for-the-badge&logo=espressif&logoColor=white"/>
-<img src="https://img.shields.io/badge/AI-Computer%20Vision-blueviolet?style=for-the-badge&logo=opencv&logoColor=white"/>
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Hardware-Embedded-orange?style=for-the-badge&logo=arduino&logoColor=white"/>
 
 <br/>
 
