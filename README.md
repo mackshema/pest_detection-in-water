@@ -268,7 +268,6 @@ Advantages:
 
 <br/>
 
-</div>
 
 ---
 
@@ -544,6 +543,7 @@ This project is released under the **MIT License** — free to use, modify, and 
 | AI/ML Engineer | Model training, optimization & deployment |
 | Hardware Architect | PCB design & system integration |
 
+</div>
 ---
 
 <div align="center">
